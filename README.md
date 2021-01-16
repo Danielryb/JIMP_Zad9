@@ -16,12 +16,7 @@ wikidyd: http://wikidyd.iem.pw.edu.pl/LMP(2f)9.html
 
 ## Projekt
 Dostosowując się do zaproponowanego interfejsu projektowego, dopisać następujące (wybrane zgodnie z przydzielonym tematem) użyteczności:
-- aproksymacja średniokwadratowa, baza: w. 4 stopnia
-- aproksymacja średniokwadratowa, baza: w. Hermite'a
-- aproksymacja średniokwadratowa, baza: w. Czebyszewa
-- aproksymacja średniokwadratowa, baza: w. Laguerra
 - metoda gradientów sprzężonych (zamiast rozwiązywania układu równań metodą Gaussa)
-- metoda Gaussa-Seidla (zamiast rozwiązywania układu równań metodą Gaussa)
 
 Co będziemy oceniać?
 
