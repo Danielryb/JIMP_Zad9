@@ -4,7 +4,7 @@ Proszę przeanalizować strukturę zaproponowanego projektu, który rozwiązuje 
 - eliminate – implementująca schodkowanie macierzy z wyborem elementu głównego,
 - backsubst – wykonująca wsteczne podstawienie.
 
-Co będzie oceniane?
+### Co będzie oceniane?
 - 2pkt – merge gałęzi rozwojowych
 - 4pkt – schodkowanie + wsteczne podstawienie
 - 2pkt - testy
@@ -18,7 +18,7 @@ wikidyd: http://wikidyd.iem.pw.edu.pl/LMP(2f)9.html
 Dostosowując się do zaproponowanego interfejsu projektowego, dopisać następujące (wybrane zgodnie z przydzielonym tematem) użyteczności:
 - metoda gradientów sprzężonych (zamiast rozwiązywania układu równań metodą Gaussa)
 
-Co będziemy oceniać?
+### Co będziemy oceniać?
 
 (25pkt) IMPLEMENTACJA
 - Nowy moduł aproksymujący / nowy moduł rozwiązujący układ równań
