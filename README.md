@@ -35,4 +35,5 @@ Dostosowując się do zaproponowanego interfejsu projektowego, dopisać następu
 
 (5 pkt) Porównanie działania z istniejącą aproksymacją/metodą rozwiązywania Układów Równań Liniowych (np poprzez porównanie sumy miar L2 między rozwiązaniami tego samego zadania przez 2 różne metody) + Wnioski + Analiza valgrind
 
+
 Projekty będą oceniane podczas indywidualnego spotkania z członkami zespołów, które odbędzie się 22.01.2021 (za komplet punktów) oraz wedle potrzeb 29.01.2021 (za 50% punktów). Przed oddaniem będzie czas na konsultacje projektowe. Projekt można oddawać przed ostatecznym terminem.
