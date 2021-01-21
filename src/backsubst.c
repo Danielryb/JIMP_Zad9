@@ -14,7 +14,7 @@ int  backsubst(Matrix *x, Matrix *mat, Matrix *b) {
 	{
 		int i, l = x->r;
 		for (i =0; i < l; i++) {
-			x->data[l-i-1] = b->data[l-i-1][0];
+			x->data[l-i-1][0] = b->data[l-i-1][0];
 			int j;
 			for (j = 0; j < i; j++)
 				x->data[l-i-1][0] -= mat->data[l-i-1][l-j-1] * x->data[l-j-1][0];

@@ -20,7 +20,8 @@ int main(int argc, char ** argv) {
 	x = createMatrix(b->r, 1);
 	if (x != NULL) {
 		res = backsubst(x,A,b);
-
+		if(res == 1)
+			fprintf(stderr, "Błąd! Dzielenie przez 0.\n");
 		printToScreen(x);
 	  freeMatrix(x);
 	} else {
@@ -29,6 +30,5 @@ int main(int argc, char ** argv) {
 
 	freeMatrix(A);
 	freeMatrix(b);
-
 	return 0;
 }
