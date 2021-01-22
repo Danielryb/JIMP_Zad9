@@ -17,12 +17,17 @@ int main(int argc, char ** argv) {
 	printToScreen(b);
 
 	res = eliminate(A,b);
+	if (res == 1)
+		fprintf(stderr, "Błąd! Dzielenie przez 0.\n");
+	if (A->r != b->r)
+		fprintf(stderr, "Błąd! Macierz A i b mają różną liczbę wierszy.\n");
 	x = createMatrix(b->r, 1);
 	if (x != NULL) {
 		res = backsubst(x,A,b);
 		if(res == 1)
 			fprintf(stderr, "Błąd! Dzielenie przez 0.\n");
-		printToScreen(x);
+		else
+			printToScreen(x);
 	  freeMatrix(x);
 	} else {
 					fprintf(stderr,"Błąd! Nie mogłem utworzyć wektora wynikowego x.\n");
