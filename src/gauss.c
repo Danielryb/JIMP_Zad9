@@ -7,24 +7,25 @@
 int eliminate(Matrix *mat, Matrix *b){
 	int l = mat->r;
 	for(int k = 0; k < l-1; k++){
-		int ind_max = k;
-		double max_max = fabs(mat->data[k][k]);
-		for(int d = k+1; d<= l-1; d++){
-			if(fabs(mat->data[d][k]) > max_max){
-				max_max = fabs(mat->data[d][k]);
-				ind_max = d;
-			}
+		int max = k;
+		for(int i = k + 1; i < l; i++)
+		{
+			if(fabs(mat->data[i][k]) > fabs(mat->data[max][k]))
+				max = i;
 		}
-		if(max_max == 0)
+		if (mat->data[max][k] == 0)
 			return 1;
-		if(ind_max != k){
-			double *arr = mat->data[k];
-			double *tmp = b->data[k];
-			mat->data[k] = mat->data[ind_max];
-			mat->data[ind_max] = arr;
-			b->data[k] = b->data[ind_max];
-			b->data[ind_max] = tmp;
+		if (max != k)
+		{
+			double *tmp;
+			tmp = mat->data[k];
+			mat->data[k] = mat->data[max];
+			mat->data[max] = tmp;
+			tmp = b->data[k];
+			b->data[k] = b->data[max];
+			b->data[max] = tmp;
 		}
+
 		for(int i = k+1; i < l; i++){
 			if(mat->data[i][k] == 0)
 				continue;
